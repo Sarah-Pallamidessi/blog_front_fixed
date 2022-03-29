@@ -14,7 +14,7 @@ const PostComment = (props) => {
                 author: "Who?"
     })
         };
-        await fetch(`/api/comment/${props.id}`,requestOptions)
+        await fetch(`http://blog-backend-fixed.herokuapp.comcd/api/comment/${props.id}`,requestOptions)
         window.location.reload(false);
     }
     

@@ -14,11 +14,11 @@ const Post = (props) => {
 
     const fetchData = async (id) => {
 
-        const response = await fetch(`http://localhost:3000/api/blog/${id}`);
+        const response = await fetch(`http://blog-backend-fixed.herokuapp.com/api/blog/${id}`);
         const posts = await response.json();
         
         setPost(posts);
-        const response2 = await fetch(`http://localhost:3000/api/comment/${id}`);
+        const response2 = await fetch(`http://blog-backend-fixed.herokuapp.com/api/comment/${id}`);
         const comments = await response2.json();
         setComment(comments.comments);
         console.log(comments)

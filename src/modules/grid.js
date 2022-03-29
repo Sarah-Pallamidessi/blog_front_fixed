@@ -14,7 +14,7 @@ const Grid = () => {
 
     const fetchData = async () => {
         
-        const response = await fetch('http://localhost:3000/api/blog');
+        const response = await fetch('http://blog-backend-fixed.herokuapp.com/api/blog');
         const posts = await response.json();
         
         let activeCol = 0;
